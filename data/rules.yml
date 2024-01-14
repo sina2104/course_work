@@ -1,0 +1,25 @@
+rules:
+- rule: Respond to greetings
+  steps:
+  - intent: greet
+  - action: utter_greet
+
+- rule: Provide weather description
+  steps:
+  - intent: weather_temps_in_N_days
+  - action: action_weather_temps_in_N_days
+
+- rule: Provide tomorrow's weather temperatures
+  steps:
+  - intent: weather_temps_tomorrow
+  - action: action_weather_temps_tomorrow
+
+- rule: Provide next week's weather temperatures
+  steps:
+  - intent: weather_temps_next_week
+  - action: action_weather_temps_next_week
+
+- rule: Say goodbye
+  steps:
+  - intent: goodbye
+  - action: utter_goodbye

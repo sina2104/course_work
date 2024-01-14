@@ -1,0 +1,27 @@
+stories:
+- story: path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: weather_temps_in_N_days
+  - action: action_weather_temps_in_N_days
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: weather_temps_tomorrow
+  - action: action_weather_temps_tomorrow
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: path 3
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: weather_temps_next_week
+  - action: action_weather_temps_next_week
+  - intent: goodbye
+  - action: utter_goodbye

@@ -1,0 +1,23 @@
+intents:
+  - greet
+  - weather_temps_in_N_days
+  - weather_temps_tomorrow
+  - weather_temps_next_week
+  - goodbye
+
+entities:
+  - city_name
+  - N
+
+responses:
+  utter_greet:
+    - text: "Привет!\nЗдесь можешь узнать погоду в любом городе России."
+  utter_goodbye:
+    - text: "До встречи!"
+
+actions:
+- action_weather_temps_in_N_days
+- action_weather_temps_tomorrow
+- action_weather_temps_next_week
+- utter_greet
+- utter_goodbye
